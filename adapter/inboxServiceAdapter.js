@@ -1,16 +1,16 @@
 const Inbox = require('./inbox')
 
 class InboxServiceAdapter {
-	constructor() {
-		this.inbox = new Inbox()
-	}
+  constructor() {
+    this.inbox = new Inbox()
+  }
 
   activate() {
-  	this.inbox.add()
+    this.inbox.add()
   }
 
   deactivate() {
-  	this.inbox.delete()
+    this.inbox.delete()
   }
 }
 
